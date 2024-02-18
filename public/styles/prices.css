@@ -1,0 +1,81 @@
+:root {
+    --headColor: #000;
+    --headFontSize: 6rem;
+    --fontSize2: 3.6rem;
+    --fontSize3: 2.2rem;
+    --fontSize4: 1.3rem;
+    --fontSize5: 0.8rem;
+    --fontSize6: 1.7rem;
+    --headColPrimary: #ebeb00;
+    --headColSecondary: #adad00;
+    --fontFamSecond: 'Agbalumo', sans-serif;
+    --fontFamPrimary: 'Jost', sans-serif; /* for body */
+    --abtHeadFam: 'Poppins', sans-serif;   
+}
+.headContainer2{
+    background: url("/images/theyyam_edit.png");
+    background-position: center;
+    background-size: cover;
+    /* width: 100vw; */
+    /* height: 62.9rem; */
+
+}
+.pnavContainer{
+    display: flex;
+    position: relative;
+    top: -54rem;
+    left: 70%;
+    width: fit-content;
+    font-size: var(--fontSize4);
+    /* color: #fff; */
+}
+.priceContainer{
+    padding: 0 0 0 5rem;
+    font-family: var(--fontFamPrimary);
+}
+.winnersHead{
+    text-align: center;
+    color: var(--headColPrimary);
+    transform: translate(-4%);
+    margin: 0 0 5rem 0;
+    font-size: var(--fontSize3);
+}
+.eventHead{
+    font-size: var(--fontSize6);
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 0.8rem;
+    margin: 0 0 3rem 0;
+    text-align: center;
+    transform: translate(-5%);
+}
+.winners{
+    display: flex;
+    padding-left: 2rem;
+    padding-bottom: 3rem;
+    color: #fff;
+}
+.wname{
+    text-align: center;
+}
+.wname:not(.one) {
+    margin-left: 20rem;
+}
+.first{
+    font-size: var(--fontSize3);
+    font-weight: 800;
+}
+.fPrice{
+    font-size: var(--fontSize4);
+}
+@media only screen and (max-width: 600px) {
+    .winners{
+        flex-direction: column;
+    }
+    .priceContainer{
+        padding: 0;
+    }
+    .wname:not(.one){
+        margin: 0;
+    }
+}

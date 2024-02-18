@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --headColor: #000;
+    --headFontSize: 6rem;
+    --fontSize2: 3.6rem;
+    --fontSize3: 2.2rem;
+    --fontSize4: 1.3rem;
+    --fontSize5: 0.8rem;
+    --headColPrimary: #ebeb00;
+    --headColSecondary: #adad00;
+    --fontFamSecond: 'Agbalumo', sans-serif;
+    --fontFamPrimary: 'Jost', sans-serif;
+    /* for body */
+    --abtHeadFam: 'Poppins', sans-serif;
+}
+
+/* ---------------------- */
+.headContainer {
+    background: url("/images/theyyam_edit.png");
+    background-position: center;
+    background-size: cover;
+    /* width: 100vw; */
+    height: 62.9rem;
+
+}
+
+body {
+    /* overflow: hidden; */
+    overflow-x: hidden;
+}
+
+input {
+    width: 250px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    bottom: 35px;
+    left: calc(50% - 125px);
+    background: none;
+    color: white;
+    font-size: 30px;
+    font-family: arial;
+    text-align: center;
+    border: 1px solid white;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.navContainer {
+    display: flex;
+    /* position: absolute; */
+    padding-top: 30px;
+    /* top: -120%; */
+    /* left: 57%; */
+    /* width: fit-content; */
+    font-size: var(--fontSize4);
+    /* color: #fff; */
+    justify-content: flex-end;
+}
+
+.navA {
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+    padding: 0 3rem 0 0;
+    font-family: var(--abtHeadFam);
+}
+
+.navMenu {
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+}
+
+.closeBtn {
+    color: #fff;
+    visibility: hidden;
+}
+
+.showBtn {
+    color: #fff;
+    visibility: visible;
+}
+
+.bgimage {
+    background: url("/images/theyyam_edit.png");
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 62.9rem;
+    position: fixed;
+    z-index: -1;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 600px) {
+    .navA {
+        /* color: aqua; */
+        font-size: var(--fontSize3);
+    }
+
+    .fd-row {
+        display: flex;
+        flex-direction: row;
+    }
+}
